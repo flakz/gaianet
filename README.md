@@ -1,3 +1,15 @@
+<h2 align=center>Gaianet Node</h2>
+
+## Minimum System Requirements
+
+| **Component**             | **Requirement**                     |
+|---------------------------|-------------------------------------|
+| **Operating System (OS)** | Ubuntu (Recommended)                |
+| **CPU Architecture**      | amd64 (x86 architecture)            |
+| **Storage**               | 100GB available storage             |
+| **Memory (RAM)**          | 4GB RAM                             |
+| **Processor**             | 4 cores                             |
+
 # Gaianet Node Setup Guide
 
 This repository provides a step-by-step guide to set up and run a Gaianet node inside a Docker container. Easily follow the instructions to build, run, and manage your node with resource limits for optimal performance. Contributions are welcome!
