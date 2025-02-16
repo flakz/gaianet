@@ -46,4 +46,37 @@ Open a terminal in the directory where the Dockerfile is located and run the fol
 ```
 docker build -t gaianet-node .
 ```
+### 3. Run the Docker Container
+Run the following command to start a container with the specified CPU and memory limits:
+
+```
+docker run -d --name gaianet-node-container --cpus="1" --memory="2g" -p 3000:3000 gaianet-node
+```
+### 4. Get Node Info
+To retrieve the node ID and device ID, run the following command:
+```
+docker exec -it gaianet-node-container /root/gaianet/bin/gaianet info
+```
+### 5. Stopping the Gaianet Node
+To stop the Gaianet node, run:
+```
+docker exec -it gaianet-node-container /root/gaianet/bin/gaianet stop
+```
+### 6. Additional Docker Commands
+Check running containers:
+
+```bash
+docker ps
+```
+Check container logs:
+
+```bash
+docker logs gaianet-node-container
+```
+Stop and remove the container:
+
+```bash
+docker stop gaianet-node-container
+docker rm 
+```
 
